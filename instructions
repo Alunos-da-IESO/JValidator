@@ -1,8 +1,18 @@
 git clone https://github.com/Alunos-da-IESO/JValidator.git
+
 #do your code
+
 git add .
+
 git branch yourName
+
 git checkout yourName
+
 git commit -m "myName - description"
+
 git push -u origin yourName
 
+***
+Do push with MAIN branch, use only your branchs to add code and commit, again
+put at main branch.
+***
