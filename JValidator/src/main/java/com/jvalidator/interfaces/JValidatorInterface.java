@@ -1,6 +1,7 @@
-package interfaces;
+package com.jvalidator.interfaces;
 
 public interface JValidatorInterface {
+
 	public boolean isNumeric(String value, char decimalSeparator);
 	public boolean isInteger(String value);
 	public boolean isDecimal(String value, char decimalSeparator);

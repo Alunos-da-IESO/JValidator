@@ -5,4 +5,3 @@ git branch yourName
 git checkout yourName
 git commit -m "myName - description"
 git push -u origin yourName
-
