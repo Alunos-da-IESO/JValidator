@@ -1,0 +1,7 @@
+git add .
+git remote add origin https://github.com/Alunos-da-IESO/JValidator.git
+git branch myName
+git checkout myName
+git commit -m "myName - description"
+git push -u origin master
+
