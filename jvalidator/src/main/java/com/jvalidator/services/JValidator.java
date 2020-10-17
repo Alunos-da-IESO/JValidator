@@ -10,7 +10,7 @@ public class JValidator implements JValidatorInterface {
 		boolean result = true;
 		try {
 			Double.parseDouble(value);
-		} catch (NumberFormatException e) {
+		} catch (NumberFormatException error) {
 	        result = false;
 	    }
 
@@ -40,45 +40,92 @@ public class JValidator implements JValidatorInterface {
 	@Override
 	public boolean isDecimal(String value) {
 		
-
-		return true;
+		boolean result = true;
 		
+		try {
+			Double.parseDouble(value);
+		} catch (NumberFormatException error) {
+	        result = false;
+	    }
+
+		return result;
+		
+			
 	}
 
 	@Override
 	public boolean isNullorEmpty(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value == null || value.isEmpty();
 	}
 
 	@Override
 	public boolean isLetters(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLetter(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isUpperCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isUpperCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
