@@ -48,7 +48,9 @@ public class JValidator implements JValidatorInterface {
 		} catch (NumberFormatException error) {
 	        result = false;
 	    }
+
 		return result;
+
 	}
 
 	@Override
@@ -158,9 +160,18 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isCPF(String value) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+		
+		if (value.length() > 11 ||  value.isEmpty()) {
+	 
+	          return false;
+	          
+	  } else {
+		  
+	  }
+		  return true;
+	  }
+	 
+		
 
 	@Override
 	public boolean isCNPJ(String value) {

@@ -26,7 +26,7 @@ class JValidatorApplicationTests {
 	void isDecimal() {
 		assertTrue(validator.isDecimal("5.5"));
 	}
-	
+
 	@Test
 	void isNullorEmpty() {
 		assertTrue(validator.isNullorEmpty(null));
@@ -61,17 +61,20 @@ class JValidatorApplicationTests {
 	void isAlphaBet() {
 		assertTrue(validator.isAlphaBet("aefjfigi"));
 	}
-	
+
 	@Test
 	void isEmail() {
 		assertTrue(validator.isEmail("teste@hotmail.com"));
 	}
 	
 	@Test
+	void isCPF() {
+		assertTrue(validator.isCPF(""));
+	}
+	
+	@Test
 	void isCNPJ() {
 		assertTrue(validator.isCNPJ("30632330000160"));
 	}
-
-
 
 }
