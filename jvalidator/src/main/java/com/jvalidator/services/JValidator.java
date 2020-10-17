@@ -39,14 +39,13 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isDecimal(String value) {
-		
 		return false;
 	}
 
 	@Override
 	public boolean isNullorEmpty(String value) {
-		// TODO Auto-generated method stub
-		return false;
+
+		return value == null || value.isEmpty();
 	}
 
 	@Override

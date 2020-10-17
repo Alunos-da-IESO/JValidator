@@ -13,13 +13,19 @@ class JValidatorApplicationTests {
 	@Test
 	void isNumeric() {
 		JValidator validator = new JValidator();
-		assertTrue(validator.isNumeric("j"));
+		assertTrue(validator.isNumeric("4"));
 	}
 	
 	@Test
 	void isInteger() {
 		JValidator validator = new JValidator();
-		assertTrue(validator.isInteger("j"));
+		assertTrue(validator.isInteger("1"));
+	}
+	
+	@Test
+	void isNullorEmpty() {
+		JValidator validator = new JValidator();
+		assertTrue(validator.isNullorEmpty(null));
 	}
 
 }
