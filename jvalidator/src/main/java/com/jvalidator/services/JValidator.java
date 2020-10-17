@@ -4,17 +4,31 @@ import com.jvalidator.interfaces.JValidatorInterface;
 
 public class JValidator implements JValidatorInterface {
 
+	
 	@Override
 	public boolean isNumeric(String value, char decimalSeparator) {
 		// TODO Auto-generated method stub
-		//Eduardo commit
 		return false;
 	}
 
 	@Override
 	public boolean isInteger(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		Boolean isInteger = false;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			
+			if(Character.isDigit(value.charAt(0))) {
+				if(!value.contains(","))
+					isInteger = true;
+			} else {
+				isInteger = false;
+				break;
+			}	
+		}
+		
+
+		return isInteger;
 	}
 
 	@Override

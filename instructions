@@ -12,7 +12,4 @@ git commit -m "myName - description"
 
 git push -u origin yourName
 
-***
-Do push with MAIN branch, use only your branchs to add code and commit, again
-put at main branch.
-***
+
