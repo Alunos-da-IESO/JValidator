@@ -7,7 +7,9 @@ public class JValidator implements JValidatorInterface {
 	
 	@Override
 	public boolean isNumeric(String value, char decimalSeparator) {
-		// TODO Auto-generated method stub
+		boolean result = true;
+		
+
 		return false;
 	}
 

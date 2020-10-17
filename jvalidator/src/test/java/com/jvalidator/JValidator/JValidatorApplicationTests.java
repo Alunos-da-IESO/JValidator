@@ -13,7 +13,7 @@ class JValidatorApplicationTests {
 	@Test
 	void isInteger() {
 		JValidator validator = new JValidator();
-		assertTrue(validator.isInteger("5,9"));
+		assertTrue(validator.isInteger("5"));
 	}
 
 }
