@@ -164,8 +164,7 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isCNPJ(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value.length() == 14;
 	}
 
 	

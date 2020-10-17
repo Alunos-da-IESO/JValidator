@@ -66,6 +66,11 @@ class JValidatorApplicationTests {
 	void isEmail() {
 		assertTrue(validator.isEmail("teste@hotmail.com"));
 	}
+	
+	@Test
+	void isCNPJ() {
+		assertTrue(validator.isCNPJ("30632330000160"));
+	}
 
 
 
