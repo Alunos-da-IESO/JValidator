@@ -10,7 +10,7 @@ public class JValidator implements JValidatorInterface {
 		boolean result = true;
 		try {
 			Double.parseDouble(value);
-		} catch (NumberFormatException e) {
+		} catch (NumberFormatException error) {
 	        result = false;
 	    }
 
@@ -40,8 +40,15 @@ public class JValidator implements JValidatorInterface {
 	@Override
 	public boolean isDecimal(String value) {
 
-		return true;
 		
+		boolean result = true;
+		
+		try {
+			Double.parseDouble(value);
+		} catch (NumberFormatException error) {
+	        result = false;
+	    }
+		return result;
 	}
 
 	@Override
@@ -120,18 +127,6 @@ public class JValidator implements JValidatorInterface {
 	}
 
 	@Override
-	public boolean isIntegerInRange(int value, int lowerBound, int upperBound) {
-		
-		return false;
-	}
-
-	@Override
-	public boolean isDecimalInRange(double value, double lowerBound, double upperBound) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
 	public boolean isAlphaBet(String value) {
 		Boolean result = true;
 		
@@ -145,27 +140,20 @@ public class JValidator implements JValidatorInterface {
 	}
 
 	@Override
-	public boolean isLetterInRange(char value, char lowerBound, char upperBound) {
+	public boolean isHourFormat(String value) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean isHourFormat(String value, String format) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isDateFormat(String value, String format) {
+	public boolean isDateFormat(String value) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean isEmail(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value.contains("@") && value.contains(".com");
 	}
 
 	@Override

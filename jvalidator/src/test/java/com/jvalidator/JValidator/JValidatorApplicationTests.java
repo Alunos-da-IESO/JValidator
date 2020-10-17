@@ -19,8 +19,12 @@ class JValidatorApplicationTests {
 	
 	@Test
 	void isInteger() {
-
 		assertTrue(validator.isInteger("1"));
+	}
+	
+	@Test
+	void isDecimal() {
+		assertTrue(validator.isDecimal("5.5"));
 	}
 	
 	@Test
@@ -52,10 +56,15 @@ class JValidatorApplicationTests {
 	void isLowerCaseAll() {
 		assertTrue(validator.isLowerCaseAll("aefjfigi"));
 	}
-	
+
 	@Test
 	void isAlphaBet() {
 		assertTrue(validator.isAlphaBet("aefjfigi"));
+	}
+	
+	@Test
+	void isEmail() {
+		assertTrue(validator.isEmail("teste@hotmail.com"));
 	}
 
 
