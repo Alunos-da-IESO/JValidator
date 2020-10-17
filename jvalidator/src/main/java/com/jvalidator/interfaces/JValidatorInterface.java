@@ -4,7 +4,7 @@ public interface JValidatorInterface {
 
 	public boolean isNumeric(String value);
 	public boolean isInteger(String value);
-	public boolean isDecimal(String value, char decimalSeparator);
+	public boolean isDecimal(String value);
 	public boolean isNullorEmpty(String value);
 	public boolean isLetters(String value);
 	public boolean isUpperCase(String value);

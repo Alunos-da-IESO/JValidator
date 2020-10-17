@@ -38,8 +38,8 @@ public class JValidator implements JValidatorInterface {
 	}
 
 	@Override
-	public boolean isDecimal(String value, char decimalSeparator) {
-		// HUMBERTO É UM PANGOLÃO
+	public boolean isDecimal(String value) {
+		
 		return false;
 	}
 
