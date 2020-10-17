@@ -27,5 +27,11 @@ class JValidatorApplicationTests {
 		JValidator validator = new JValidator();
 		assertTrue(validator.isNullorEmpty(null));
 	}
+	
+	@Test
+	void isLetters() {
+		JValidator validator = new JValidator();
+		assertTrue(validator.isLetters("aefjfigi"));
+	}
 
 }

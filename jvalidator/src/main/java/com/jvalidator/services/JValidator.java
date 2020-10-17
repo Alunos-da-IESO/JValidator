@@ -44,14 +44,21 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isNullorEmpty(String value) {
-
 		return value == null || value.isEmpty();
 	}
 
 	@Override
 	public boolean isLetters(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLetter(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
