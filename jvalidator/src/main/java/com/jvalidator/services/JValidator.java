@@ -6,11 +6,15 @@ public class JValidator implements JValidatorInterface {
 
 	
 	@Override
-	public boolean isNumeric(String value, char decimalSeparator) {
+	public boolean isNumeric(String value) {
 		boolean result = true;
-		
+		try {
+			Double.parseDouble(value);
+		} catch (NumberFormatException e) {
+	        result = false;
+	    }
 
-		return false;
+		return result;
 	}
 
 	@Override

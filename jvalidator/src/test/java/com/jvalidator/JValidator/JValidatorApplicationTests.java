@@ -11,9 +11,9 @@ import com.jvalidator.services.JValidator;
 class JValidatorApplicationTests {
 	
 	@Test
-	void isInteger() {
+	void isNumeric() {
 		JValidator validator = new JValidator();
-		assertTrue(validator.isInteger("5"));
+		assertTrue(validator.isNumeric("j"));
 	}
 
 }
