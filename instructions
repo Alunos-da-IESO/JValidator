@@ -1,15 +1,24 @@
-git clone https://github.com/Alunos-da-IESO/JValidator.git
+#How to start project!
 
-#do your code
+1 - git clone https://github.com/Alunos-da-IESO/JValidator.git
 
-git add .
+2 - git branch yourName [EXAMPLE: git branch rafael]
 
-git branch yourName
+3 - git checkout yourBranchName [EXAMPLE: git checkout rafael]
 
-git checkout yourName
+4 - DO YOUR CODE
 
-git commit -m "myName - description"
+5 - git commit -m "I added some code..."
 
-git push -u origin yourName
+6 - git push -u origin yourBranchName [EXAMPLE: git push -u origin rafael]
+
+7 - done! :) 
+
+#I want to att my project, what can i do?
+
+git pull origin friendBranchName [EXAMPLE: git pull origin eduardo or
+                                           git pull origin JulioCezar]
+
+
 
 
