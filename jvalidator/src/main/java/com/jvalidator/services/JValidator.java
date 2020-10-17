@@ -121,7 +121,7 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isIntegerInRange(int value, int lowerBound, int upperBound) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
@@ -133,8 +133,15 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isAlphaBet(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isAlphabetic(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		return result;
 	}
 
 	@Override

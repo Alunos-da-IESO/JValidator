@@ -17,9 +17,9 @@ class JValidatorApplicationTests {
 		assertTrue(validator.isNumeric("4"));
 	}
 	
-	/*@Test
+	@Test
 	void isInteger() {
-<<<<<<< HEAD
+
 		assertTrue(validator.isInteger("1"));
 	}
 	
@@ -52,10 +52,12 @@ class JValidatorApplicationTests {
 	void isLowerCaseAll() {
 		assertTrue(validator.isLowerCaseAll("aefjfigi"));
 	}
-=======
-		JValidator validator = new JValidator();
-		assertTrue(validator.isInteger("j"));
-	}*/
->>>>>>> 47d73e2020c21b44ae04676c1e21bdfdadcc861f
+	
+	@Test
+	void isAlphaBet() {
+		assertTrue(validator.isAlphaBet("aefjfigi"));
+	}
+
+
 
 }
