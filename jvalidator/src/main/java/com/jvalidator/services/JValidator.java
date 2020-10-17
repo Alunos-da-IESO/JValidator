@@ -6,9 +6,15 @@ public class JValidator implements JValidatorInterface {
 
 	
 	@Override
-	public boolean isNumeric(String value, char decimalSeparator) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isNumeric(String value) {
+		boolean result = true;
+		try {
+			Double.parseDouble(value);
+		} catch (NumberFormatException error) {
+	        result = false;
+	    }
+
+		return result;
 	}
 
 	@Override
@@ -32,99 +38,144 @@ public class JValidator implements JValidatorInterface {
 	}
 
 	@Override
-	public boolean isDecimal(String value, char decimalSeparator) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isDecimal(String value) {
+
+		
+		boolean result = true;
+		
+		try {
+			Double.parseDouble(value);
+		} catch (NumberFormatException error) {
+	        result = false;
+	    }
+
+		return result;
+
 	}
 
 	@Override
 	public boolean isNullorEmpty(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value == null || value.isEmpty();
 	}
 
 	@Override
 	public boolean isLetters(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLetter(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isUpperCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isUpperCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isIntegerInRange(int value, int lowerBound, int upperBound) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isDecimalInRange(double value, double lowerBound, double upperBound) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isAlphaBet(String value) {
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isAlphabetic(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public boolean isHourFormat(String value) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean isLetterInRange(char value, char lowerBound, char upperBound) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isHourFormat(String value, String format) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isDateFormat(String value, String format) {
+	public boolean isDateFormat(String value) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean isEmail(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value.contains("@") && value.contains(".com");
 	}
 
 	@Override
 	public boolean isCPF(String value) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+		
+		if (value.length() > 11 ||  value.isEmpty()) {
+	 
+	          return false;
+	          
+	  } else {
+		  
+	  }
+		  return true;
+	  }
+	 
+		
 
 	@Override
 	public boolean isCNPJ(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		return value.length() == 14;
 	}
 
 	
