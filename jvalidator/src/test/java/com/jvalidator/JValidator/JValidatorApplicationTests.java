@@ -9,29 +9,47 @@ import com.jvalidator.services.JValidator;
 
 @SpringBootTest
 class JValidatorApplicationTests {
+		
+	private JValidator validator = new JValidator();
 	
 	@Test
 	void isNumeric() {
-		JValidator validator = new JValidator();
 		assertTrue(validator.isNumeric("4"));
 	}
 	
 	@Test
 	void isInteger() {
-		JValidator validator = new JValidator();
 		assertTrue(validator.isInteger("1"));
 	}
 	
 	@Test
 	void isNullorEmpty() {
-		JValidator validator = new JValidator();
 		assertTrue(validator.isNullorEmpty(null));
 	}
 	
 	@Test
 	void isLetters() {
-		JValidator validator = new JValidator();
 		assertTrue(validator.isLetters("aefjfigi"));
+	}
+	
+	@Test
+	void isUpperCase() {
+		assertTrue(validator.isUpperCase("AEFJFIGI"));
+	}
+	
+	@Test
+	void isLowerCase() {
+		assertTrue(validator.isLowerCase("aefjfigi"));
+	}
+	
+	@Test
+	void isUpperCaseAll() {
+		assertTrue(validator.isUpperCaseAll("AEFJFIGI"));
+	}
+	
+	@Test
+	void isLowerCaseAll() {
+		assertTrue(validator.isLowerCaseAll("aefjfigi"));
 	}
 
 }

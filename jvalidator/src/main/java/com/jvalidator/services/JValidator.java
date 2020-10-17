@@ -63,26 +63,58 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isUpperCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCase(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isUpperCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isUpperCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
 	public boolean isLowerCaseAll(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isLowerCase(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
