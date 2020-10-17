@@ -39,7 +39,9 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isDecimal(String value) {
-		return false;
+
+		return true;
+		
 	}
 
 	@Override
