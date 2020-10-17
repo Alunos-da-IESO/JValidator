@@ -16,19 +16,27 @@ class JValidatorApplicationTests {
 	void isNumeric() {
 		assertTrue(validator.isNumeric("4"));
 	}
-	*/
-	/*@Test
+<<<<<<< HEAD
+	
+	@Test
 	void isInteger() {
 <<<<<<< HEAD
 		JValidator validator = new JValidator();
 		assertTrue(validator.isInteger("j"));
-	}*/
+	}
 	@Test
 	void isDecimal() {
 		assertTrue(validator.isDecimal("5.5"));
+=======
+	
+	@Test
+	void isInteger() {
+
+		assertTrue(validator.isInteger("1"));
+>>>>>>> 89dd9b36a90076323792cf39db9da3a06935f1de
 	}
 
-	/*
+	
 	@Test
 	void isNullorEmpty() {
 		assertTrue(validator.isNullorEmpty(null));
@@ -58,6 +66,17 @@ class JValidatorApplicationTests {
 	void isLowerCaseAll() {
 		assertTrue(validator.isLowerCaseAll("aefjfigi"));
 	}
->>>>>>> 9c622d010e676df2a69ff1ca7358c21457bd3d48*/
+	
+	@Test
+	void isAlphaBet() {
+		assertTrue(validator.isAlphaBet("aefjfigi"));
+	}
+*/
+	@Test
+	void isCPF() {
+		assertTrue(validator.isCPF(""));
+	}
+
+
 
 }

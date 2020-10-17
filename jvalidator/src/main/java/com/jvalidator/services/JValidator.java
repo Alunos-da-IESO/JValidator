@@ -39,6 +39,7 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isDecimal(String value) {
+
 		
 		boolean result = true;
 		
@@ -48,9 +49,9 @@ public class JValidator implements JValidatorInterface {
 	        result = false;
 	    }
 
+
 		return result;
-		
-			
+
 	}
 
 	@Override
@@ -130,7 +131,7 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isIntegerInRange(int value, int lowerBound, int upperBound) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
@@ -142,8 +143,15 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isAlphaBet(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		Boolean result = true;
+		
+		for(int i = 0 ; i < value.length() ; i++) {
+			if(!Character.isAlphabetic(value.charAt(i))) {
+				result = false;
+				break;
+			}
+		}
+		return result;
 	}
 
 	@Override
@@ -172,9 +180,18 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isCPF(String value) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+		
+		if (value.length() > 11 ||  value.isEmpty()) {
+	 
+	          return false;
+	          
+	  } else {
+		  
+	  }
+		  return true;
+	  }
+	 
+		
 
 	@Override
 	public boolean isCNPJ(String value) {
