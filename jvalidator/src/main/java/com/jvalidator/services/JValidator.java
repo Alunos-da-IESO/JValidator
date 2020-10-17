@@ -35,7 +35,7 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isDecimal(String value, char decimalSeparator) {
-		// TODO Auto-generated method stub
+		// HUMBERTO É UM PANGOLÃO
 		return false;
 	}
 
