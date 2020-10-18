@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-<img alt="Collage" src="https://ik.imagekit.io/27ewoxssse/jvalidator-logotipo_5S_EwwU46.png"> 
+<img alt="Collage" src="https://ik.imagekit.io/27ewoxssse/jvalidator-logotipo_n90JOUlcD.gif"> 
 </p>
 
 ## :rocket: Tecnologias
@@ -32,6 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 
   - [Java](https://www.java.com/pt_BR/)
   - [Spring Boot](https://spring.io/projects/spring-boot)
+  - [JUnit](https://junit.org/junit5/)
   
 
 ## :information_source: Como usar
