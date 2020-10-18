@@ -69,12 +69,22 @@ class JValidatorApplicationTests {
 	
 	@Test
 	void isCPF() {
-		assertTrue(validator.isCPF(""));
+		assertTrue(validator.isCPF("11270099400"));
 	}
 	
 	@Test
 	void isCNPJ() {
 		assertTrue(validator.isCNPJ("30632330000160"));
+	}
+	
+	@Test
+	void isHourFormat() {
+		assertTrue(validator.isHourFormat("20:43:55"));
+	}
+	
+	@Test
+	void isDateFormat() {
+		assertTrue(validator.isDateFormat("04/11/2000"));
 	}
 
 }
