@@ -12,8 +12,9 @@ public class JValidator implements JValidatorInterface {
 			Double.parseDouble(value);
 		} catch (NumberFormatException error) {
 	        result = false;
+	        
 	    }
-
+		
 		return result;
 	}
 
@@ -143,14 +144,14 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isHourFormat(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		//20:45:55
+		return value.indexOf(':', 0 ) == 2 && value.indexOf(':',3) == 5;
 	}
 
 	@Override
 	public boolean isDateFormat(String value) {
-		// TODO Auto-generated method stub
-		return false;
+		//04/11/2000
+		return value.indexOf('/', 0 ) == 2 && value.indexOf('/',3) == 5;
 	}
 
 	@Override
@@ -160,15 +161,16 @@ public class JValidator implements JValidatorInterface {
 
 	@Override
 	public boolean isCPF(String value) {
+		Boolean result = false;
 		
 		if (value.length() > 11 ||  value.isEmpty()) {
 	 
-	          return false;
+	          result = false;
 	          
 	  } else {
-		  
+		  result = true;
 	  }
-		  return true;
+		  return result;
 	  }
 	 
 		
