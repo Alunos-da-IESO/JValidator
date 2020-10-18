@@ -1,6 +1,9 @@
 <h4 align="center">
   <img alt="Logo" src="https://ik.imagekit.io/27ewoxssse/logo_7cqoP_NKh.png">
-  
+</h4>
+
+<br />
+<h3 align="left">
   <p>Uma biblioteca desenvolvida com a tecnologia Java para validação de serviços.</p>
 
   <p>Esse projeto está atualmente na versão inicial e por isso ainda tem muitos serviços implementados de forma simples.</p>
@@ -9,8 +12,8 @@
   <a href="https://www.linkedin.com/in/eduarddojose/" rel="noopener noreferrer"><strong>Eduardo José</strong></a>
   ou 
   <a href="https://www.linkedin.com/in/julio-cezar-39a318195/" rel="noopener noreferrer"><strong>Júlio Cezar</strong></a>.</p>
-  
-</h4>
+ </h3>
+<br />
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
