@@ -8,6 +8,8 @@ public class JValidatorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JValidatorApplication.class, args);
+		
+
 	}
 
 }

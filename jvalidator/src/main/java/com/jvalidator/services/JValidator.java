@@ -4,7 +4,6 @@ import com.jvalidator.interfaces.JValidatorInterface;
 
 public class JValidator implements JValidatorInterface {
 
-	
 	@Override
 	public boolean isNumeric(String value) {
 		boolean result = true;

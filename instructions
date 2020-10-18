@@ -2,17 +2,15 @@
 
 1 - git clone https://github.com/Alunos-da-IESO/JValidator.git
 
-2 - git branch yourName [EXAMPLE: git branch rafael]
+2 - git checkout -b yourBranchName [EXAMPLE: git checkout -b rafael]
 
-3 - git checkout yourBranchName [EXAMPLE: git checkout rafael]
+3 - DO YOUR CODE
 
-4 - DO YOUR CODE
+4 - git commit -m "I added some code..."
 
-5 - git commit -m "I added some code..."
+5 - git push -u origin yourBranchName [EXAMPLE: git push -u origin rafael]
 
-6 - git push -u origin yourBranchName [EXAMPLE: git push -u origin rafael]
-
-7 - done! :) 
+6 - done! :) 
 
 #I want to att my project, what can i do?
 
